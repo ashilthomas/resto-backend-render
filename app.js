@@ -13,7 +13,7 @@ app.use(cors({
 app.use(express.static('upload'))
 app.use(cookieParser())
 app.use(express.json())
-app.use(__dirname +'/upload',express.static(__dirname +'/upload'))
+app.use(__dirname +'/upload',express.static(__dirname +'upload'))
 app.use(express.urlencoded({ extended: true }));
 
 
